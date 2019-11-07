@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #5E5E5E;
-    background: url(/img/grilledfish.png) no-repeat;
+    background: url(./img/grilledfish.png) no-repeat;
     background-size: 100% auto;
     background-position: center;
 }
@@ -31,14 +31,14 @@ p {
 }
 
 .title {
-    background: rgba(94, 94, 94, 0.7);
+    background: rgba(94, 94, 94, 0.5);
     width: 100%;
     margin: 0 auto;
 }
 
 .memory-game {
-    /* width: 600px;
-    height: 600px;*/
+    width: 600px;
+    height: 600px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -60,7 +60,7 @@ p {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 600px) {
     h1 {
         font-size: 2.5em;
     }
@@ -70,14 +70,10 @@ p {
     body {
         background-size: auto 100%;
     }
-    /* .front-face, .back-face {
-        width: 90px;
-        height: 60px;
+    .memory-game {
+        width: 500px;
+        height: auto;
     }
-    .memory-card {
-        width: 90px;
-        height: 60px;
-    } */
 }
 
 .memory-card:active {
@@ -103,7 +99,7 @@ p {
 }
 
 .note {
-    background: rgba(94, 94, 94, 0.7);
+    background: rgba(94, 94, 94, 0.5);
     width: 100%;
     margin: 0 auto;
     padding: 30px 10px;
@@ -113,11 +109,11 @@ a {
 }
 @media screen and (max-width: 430px) {
     h1 {
-        font-size: 2.3em;
+        font-size: 2.5em;
         padding: 10px;
     }
     p {
-        font-size: 0.5em;
+        font-size: 0.8em;
     }
     .front-face, .back-face {
         width: 80px;
@@ -129,5 +125,9 @@ a {
     }
     body {
         background-size: auto 100%;
+    }
+    .memory-game {
+        width: 350px;
+        height: auto;
     }
 }
